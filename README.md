@@ -16,9 +16,9 @@ Deep learning models can classify images by breaking them down into their RGB va
 
 Given the potentially life-threatening effects of consuming spoiled meat, it is crucial to minimize false negatives, specifically cases where the model predicts ‘Spoiled’ meat as ‘Half-fresh’ or ‘Fresh’. Thus, recall for ‘Spoiled’ meat is a critical metric, measuring the proportion of correctly detected ‘Spoiled’ instances. Due to the importance of recall, the F3 score is the focus in terms of performance metrics. It is calculated using the following equation:
 
-\[ \text{F3 Score} = \frac{(1 + \beta^2) \cdot \text{Precision} \cdot \text{Recall}}{(\beta^2 \cdot \text{Precision}) + \text{Recall}} \]
+F3 Score = (1 + β^2) * Precision * Recall / (β^2 * Precision + Recall)
 
-where \(\beta\) is 3, giving more weight to recall compared to precision. The F3 score is chosen as the critical metric over the F2 score due to the significant importance of not inaccurately mislabeling ‘Spoiled’ meat.
+where β is 3, giving more weight to recall compared to precision. The F3 score is chosen as the critical metric over the F2 score due to the significant importance of not inaccurately mislabeling ‘Spoiled’ meat.
 
 
 ## Results
